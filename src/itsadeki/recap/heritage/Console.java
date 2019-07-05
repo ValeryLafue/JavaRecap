@@ -43,10 +43,11 @@ public class Console {
 	}
 	
 	/**
-	 * 
+	 * Test de la base de donnees
 	 */
 	public static void testDatabase() {
 		Console.bdd.connexion(superUser.getClef_secrete()).create(patrick);
+		//Console.bdd.connexion(superUser.getClef_secrete()).create(new User(0, "machin@email.fr", "machin")); // On peut ajouter des utilisateurs à la vollee
 		Console.bdd.connexion(superUser.getClef_secrete()).list();
 	}
 
